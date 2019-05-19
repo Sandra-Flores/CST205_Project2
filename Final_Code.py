@@ -1,8 +1,7 @@
 import cv2
 
 # load cascade file to detect faces
-cascade_file = 'haarcascade_frontalface_default.xml'
-face_cascade = cv2.CascadeClassifier(cascade_file)
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #Load overlay image
 img_emoji = cv2.imread('happy2.png',-1)
 #creates the mask for the emoji
